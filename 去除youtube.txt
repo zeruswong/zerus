@@ -10,6 +10,13 @@ hostname = greasyfork.org, openuserjs.org, trade-acs.m.taobao.com, *.*apps.com, 
 # 去微信公众号广告 (By Choler)
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
+# 哔哩哔哩番剧开启1080P+
+^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/bilifj.js
+
+# 动画疯 去广告
+https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js
+https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js
+
 # 酷我音乐SVIP (By yxiaocai)
 ^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js
 ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?uid\=\d+ url 302 http://musicpay.kuwo.cn/music.pay?uid=1
