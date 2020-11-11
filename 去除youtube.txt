@@ -6,7 +6,6 @@ hostname = greasyfork.org, openuserjs.org, trade-acs.m.taobao.com, *.*apps.com, 
 ^https?://boxjs.com(/home|/sub|/my|/app|/log|/revert)?($|\/) url script-echo-response https://gitee.com/chavyleung/scripts/raw/master/chavy.box.js
 
 ##NobyDa
-
 # 去微信公众号广告 (By Choler)
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
